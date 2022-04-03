@@ -14,9 +14,11 @@ class GameScene: SKScene {
         backgroundColor = .black
         
         let background = SKSpriteNode(imageNamed: "background1")
-        background.anchorPoint = CGPoint.zero
-        background.position = CGPoint.zero
-        background.zRotation = CGFloat.pi/8
+        background.anchorPoint = CGPoint(x: 0.5, y: 0.5) //default
+        background.position = CGPoint(x: size.width/2, y: size.height/2)
         addChild(background)
+        
+        let mySize = background.size
+        print("Size: \(mySize)")
     }
 }
