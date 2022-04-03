@@ -16,6 +16,7 @@ class GameScene: SKScene {
         let background = SKSpriteNode(imageNamed: "background1")
         background.anchorPoint = CGPoint.zero
         background.position = CGPoint.zero
+        background.zRotation = CGFloat.pi/8
         addChild(background)
     }
 }
