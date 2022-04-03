@@ -12,5 +12,8 @@ class GameScene: SKScene {
     
     override func didMove(to view: SKView) {
         backgroundColor = .black
+        
+        let background = SKSpriteNode(imageNamed: "background1")
+        addChild(background)
     }
 }
