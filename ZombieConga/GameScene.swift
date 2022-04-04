@@ -22,6 +22,7 @@ class GameScene: SKScene {
         addChild(background)
         
         zombie.position = CGPoint(x: 400, y: 400)
+        addChild(zombie)
         
         
     }
