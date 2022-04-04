@@ -28,7 +28,7 @@ class GameScene: SKScene {
     }
     
     override func update(_ currentTime: TimeInterval) {
-        <#code#>
+        zombie.position = CGPoint(x: zombie.position.x + 8, y: zombie.position.y)
     }
     
 }

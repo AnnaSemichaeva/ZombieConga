@@ -13,6 +13,7 @@
 		63C60FFD27F8EBBE00D5EFF7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63C60FFB27F8EBBE00D5EFF7 /* Main.storyboard */; };
 		63C60FFF27F8EBC000D5EFF7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63C60FFE27F8EBC000D5EFF7 /* Assets.xcassets */; };
 		63C6100227F8EBC000D5EFF7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63C6100027F8EBC000D5EFF7 /* LaunchScreen.storyboard */; };
+		63C6100A27FB905200D5EFF7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63C6100927FB905200D5EFF7 /* Images.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		63C60FFE27F8EBC000D5EFF7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		63C6100127F8EBC000D5EFF7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		63C6100827FB8E3F00D5EFF7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		63C6100927FB905200D5EFF7 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				63C60FFB27F8EBBE00D5EFF7 /* Main.storyboard */,
 				63C60FFE27F8EBC000D5EFF7 /* Assets.xcassets */,
 				63C6100027F8EBC000D5EFF7 /* LaunchScreen.storyboard */,
+				63C6100927FB905200D5EFF7 /* Images.xcassets */,
 			);
 			path = ZombieConga;
 			sourceTree = "<group>";
@@ -126,6 +129,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				63C60FFD27F8EBBE00D5EFF7 /* Main.storyboard in Resources */,
+				63C6100A27FB905200D5EFF7 /* Images.xcassets in Resources */,
 				63C60FFF27F8EBC000D5EFF7 /* Assets.xcassets in Resources */,
 				63C6100227F8EBC000D5EFF7 /* LaunchScreen.storyboard in Resources */,
 			);
@@ -285,7 +289,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = T74HR6T3C3;
@@ -316,7 +320,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = T74HR6T3C3;
