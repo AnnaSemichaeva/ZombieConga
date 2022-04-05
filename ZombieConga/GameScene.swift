@@ -12,6 +12,9 @@ class GameScene: SKScene {
     
     let zombie = SKSpriteNode(imageNamed: "zombie1")
     
+    let lastUpdateTime: TimeInterval = 0
+    var dt: TimeInterval = 0
+    
     override func didMove(to view: SKView) {
         backgroundColor = .black
         
