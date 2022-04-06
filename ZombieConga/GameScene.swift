@@ -32,6 +32,14 @@ class GameScene: SKScene {
     
     func moveZombieToward(location: CGPoint) {
         let offset = CGPoint(x: location.x - zombie.position.x, y: location.y - zombie.position.y)
+        let length = sqrt(Double(offset.x * offset.x + offset.y * offset.y))
+        
+        let direction = CGPoint(x: offset.x / CGFloat(length), y: offset.y / CGFloat(length))
+        velocity = CGPoint(x: direction.x * zombieMovePointsPerSec, y: direction.y * zombieMovePointsPerSec)
+    }
+    
+    func sceneTouched(touchLocation: CGPoint) {
+        moveZombieToward(location: touchLocation)
     }
     
     func move(sprite: SKSpriteNode, velocity: CGPoint) {
@@ -52,6 +60,15 @@ class GameScene: SKScene {
         print("\(dt*1000) milliseconds since last update")
         
         move(sprite: zombie, velocity: CGPoint(x: zombieMovePointsPerSec, y: 0))
+    }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        guard let touch = touches.first else {
+            return
+            
+        }
+        let touchLocation = touch.location(in: self)
+        sceneTouched(touchLocation: touchLocation)
     }
     
 }
