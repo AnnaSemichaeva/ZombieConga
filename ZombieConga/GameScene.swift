@@ -47,7 +47,7 @@ class GameScene: SKScene {
         lastUpdateTime = currentTime
         print("\(dt*1000) milliseconds since last update")
         
-        zombie.position = CGPoint(x: zombie.position.x + 8, y: zombie.position.y)
+        move(sprite: zombie, velocity: CGPoint(x: zombieMovePointsPerSec, y: 0))
     }
     
 }
