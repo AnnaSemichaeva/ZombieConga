@@ -30,6 +30,10 @@ class GameScene: SKScene {
         addChild(zombie)
     }
     
+    func moveZombieToward(location: CGPoint) {
+        let offset = CGPoint(x: location.x - zombie.position.x, y: location.y - zombie.position.y)
+    }
+    
     func move(sprite: SKSpriteNode, velocity: CGPoint) {
         let amountToMove = CGPoint(x: velocity.x * CGFloat(dt), y: velocity.y * CGFloat(dt))
         print("Amount to move: \(amountToMove)")
