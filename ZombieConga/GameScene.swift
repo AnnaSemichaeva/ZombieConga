@@ -14,6 +14,8 @@ class GameScene: SKScene {
     
     var lastUpdateTime: TimeInterval = 0
     var dt: TimeInterval = 0
+    let zombieMovePointsPerSec: CGFloat = 480.0
+    var velocity = CGPoint.zero
     
     override func didMove(to view: SKView) {
         backgroundColor = .black
@@ -26,8 +28,13 @@ class GameScene: SKScene {
         
         zombie.position = CGPoint(x: 400, y: 400)
         addChild(zombie)
+    }
+    
+    func move(sprite: SKSpriteNode, velocity: CGPoint) {
+        let amountToMove = CGPoint(x: velocity.x * CGFloat(dt), y: velocity.y * CGFloat(dt))
+        print("Amount to move: \(amountToMove)")
         
-        
+        sprite.position = CGPoint(x: sprite.position.x + amountToMove.x, y: sprite.position.y + amountToMove.y)
     }
     
     override func update(_ currentTime: TimeInterval) {
