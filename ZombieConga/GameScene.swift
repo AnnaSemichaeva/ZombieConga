@@ -59,7 +59,7 @@ class GameScene: SKScene {
         lastUpdateTime = currentTime
         print("\(dt*1000) milliseconds since last update")
         
-        move(sprite: zombie, velocity: CGPoint(x: zombieMovePointsPerSec, y: 0))
+        move(sprite: zombie, velocity: velocity)
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
