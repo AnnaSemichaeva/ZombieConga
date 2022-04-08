@@ -17,6 +17,20 @@ class GameScene: SKScene {
     let zombieMovePointsPerSec: CGFloat = 480.0
     var velocity = CGPoint.zero
     
+    let playableRect: CGRect
+    
+    override init(size: CGSize) {
+        let maxAspectRatio: CGFloat = 16.0 / 9.0
+        let playableHeight = size.width / maxAspectRatio
+        let playableMargin = (size.height - playableHeight) / 2.0
+        playableRect = CGRect(x: 0, y: playableMargin, width: size.width, height: playableHeight)
+        super.init(size: size)
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
     override func didMove(to view: SKView) {
         backgroundColor = .black
         
@@ -28,6 +42,16 @@ class GameScene: SKScene {
         
         zombie.position = CGPoint(x: 400, y: 400)
         addChild(zombie)
+    }
+    
+    func debugDrawPLayableArea() {
+        let shape = SKShapeNode()
+        let path = CGMutablePath()
+        path.addRect(playableRect)
+        shape.path = path
+        shape.strokeColor = SKColor.red
+        shape.lineWidth = 4.0
+        addChild(shape)
     }
     
     func moveZombieToward(location: CGPoint) {
