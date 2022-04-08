@@ -77,7 +77,7 @@ class GameScene: SKScene {
     
     func boundsCheckZombie() {
         let bottomLeft = CGPoint(x: 0, y: playableRect.minY)
-        let topRight = CGPoint(x: size.width, y: size.height)
+        let topRight = CGPoint(x: size.width, y: playableRect.maxY)
         
         if zombie.position.x <= bottomLeft.x {
             zombie.position.x = bottomLeft.x
