@@ -57,6 +57,21 @@ class GameScene: SKScene {
             zombie.position.x = bottomLeft.x
             velocity.x = -velocity.x
         }
+        
+        if zombie.position.x >= topRight.x {
+            zombie.position.x = topRight.x
+            velocity.x = -velocity.x
+        }
+        
+        if zombie.position.y <= bottomLeft.y {
+            zombie.position.y = bottomLeft.y
+            velocity.y = -velocity.y
+        }
+        
+        if zombie.position.y >= topRight.y {
+            zombie.position.y = topRight.y
+            velocity.y = -velocity.y
+        }
     }
     
     override func update(_ currentTime: TimeInterval) {
@@ -70,6 +85,8 @@ class GameScene: SKScene {
         print("\(dt*1000) milliseconds since last update")
         
         move(sprite: zombie, velocity: velocity)
+        
+        boundsCheckZombie()
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
