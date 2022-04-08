@@ -42,6 +42,8 @@ class GameScene: SKScene {
         
         zombie.position = CGPoint(x: 400, y: 400)
         addChild(zombie)
+        
+        debugDrawPLayableArea()
     }
     
     func debugDrawPLayableArea() {
@@ -74,7 +76,7 @@ class GameScene: SKScene {
     }
     
     func boundsCheckZombie() {
-        let bottomLeft = CGPoint.zero
+        let bottomLeft = CGPoint(x: 0, y: playableRect.minY)
         let topRight = CGPoint(x: size.width, y: size.height)
         
         if zombie.position.x <= bottomLeft.x {
