@@ -75,6 +75,10 @@ class GameScene: SKScene {
         sprite.position = CGPoint(x: sprite.position.x + amountToMove.x, y: sprite.position.y + amountToMove.y)
     }
     
+    func rotate(sprite: SKSpriteNode, direction: CGPoint) {
+        sprite.zRotation = CGFloat(atan2(Double(direction.y), Double(direction.x)))
+    }
+    
     func boundsCheckZombie() {
         let bottomLeft = CGPoint(x: 0, y: playableRect.minY)
         let topRight = CGPoint(x: size.width, y: playableRect.maxY)
@@ -111,6 +115,8 @@ class GameScene: SKScene {
         print("\(dt*1000) milliseconds since last update")
         
         move(sprite: zombie, velocity: velocity)
+        
+        rotate(sprite: zombie, direction: velocity)
         
         boundsCheckZombie()
     }
