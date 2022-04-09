@@ -130,4 +130,13 @@ class GameScene: SKScene {
         sceneTouched(touchLocation: touchLocation)
     }
     
+    override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
+        guard let touch = touches.first else {
+            return
+            
+        }
+        let touchLocation = touch.location(in: self)
+        sceneTouched(touchLocation: touchLocation)
+    }
+    
 }
