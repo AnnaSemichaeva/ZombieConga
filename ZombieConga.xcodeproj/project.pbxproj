@@ -14,6 +14,7 @@
 		63C60FFF27F8EBC000D5EFF7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63C60FFE27F8EBC000D5EFF7 /* Assets.xcassets */; };
 		63C6100227F8EBC000D5EFF7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63C6100027F8EBC000D5EFF7 /* LaunchScreen.storyboard */; };
 		63C6100A27FB905200D5EFF7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63C6100927FB905200D5EFF7 /* Images.xcassets */; };
+		63FEFFE9280378CC005D1BA9 /* MyUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63FEFFE8280378CC005D1BA9 /* MyUtils.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		63C6100127F8EBC000D5EFF7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		63C6100827FB8E3F00D5EFF7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		63C6100927FB905200D5EFF7 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		63FEFFE8280378CC005D1BA9 /* MyUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyUtils.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +44,7 @@
 		63C60FE527F8EBBE00D5EFF7 = {
 			isa = PBXGroup;
 			children = (
+				63FEFFE8280378CC005D1BA9 /* MyUtils.swift */,
 				63C60FF027F8EBBE00D5EFF7 /* ZombieConga */,
 				63C60FEF27F8EBBE00D5EFF7 /* Products */,
 			);
@@ -145,6 +148,7 @@
 				63C60FF827F8EBBE00D5EFF7 /* GameScene.swift in Sources */,
 				63C60FFA27F8EBBE00D5EFF7 /* GameViewController.swift in Sources */,
 				63C60FF227F8EBBE00D5EFF7 /* AppDelegate.swift in Sources */,
+				63FEFFE9280378CC005D1BA9 /* MyUtils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
