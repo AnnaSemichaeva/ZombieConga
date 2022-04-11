@@ -65,3 +65,7 @@ func /= (point: inout CGPoint, scalar: CGFloat) {
         return CGFloat(sqrt(Float(a)))
     }
 #endif
+
+extension CGPoint {
+    
+}
