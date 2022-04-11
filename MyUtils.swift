@@ -55,3 +55,13 @@ func / (point: CGPoint, scalar: CGFloat) -> CGPoint {
 func /= (point: inout CGPoint, scalar: CGFloat) {
     point = point / scalar
 }
+
+#if !(arch(x86_64) || arch(arm64))
+    func atan2(y: CGFloat, x: CGFloat) -> CGFloat {
+        return CGFloat(atan2(Float(y), Float(x)))
+    }
+
+    func sqrt(a: CGFloat) -> CGFloat {
+        return CGFloat(sqrt(Float(a)))
+    }
+#endif
