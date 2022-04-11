@@ -31,3 +31,7 @@ func * (left: CGPoint, right: CGPoint) -> CGPoint {
 func *= (left: inout CGPoint, right: CGPoint) {
     left = left * right
 }
+
+func * (point: CGPoint, scalar: CGFloat) -> CGPoint {
+    return CGPoint(x: point.x * scalar, y: point.y * scalar)
+}
