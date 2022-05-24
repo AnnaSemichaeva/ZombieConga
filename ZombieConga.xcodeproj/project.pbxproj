@@ -44,6 +44,7 @@
 		63C60FE527F8EBBE00D5EFF7 = {
 			isa = PBXGroup;
 			children = (
+				63FEFFE8280378CC005D1BA9 /* MyUtils.swift */,
 				63C60FF027F8EBBE00D5EFF7 /* ZombieConga */,
 				63C60FEF27F8EBBE00D5EFF7 /* Products */,
 			);
@@ -60,15 +61,14 @@
 		63C60FF027F8EBBE00D5EFF7 /* ZombieConga */ = {
 			isa = PBXGroup;
 			children = (
+				63C6100827FB8E3F00D5EFF7 /* Info.plist */,
 				63C60FF127F8EBBE00D5EFF7 /* AppDelegate.swift */,
 				63C60FF727F8EBBE00D5EFF7 /* GameScene.swift */,
 				63C60FF927F8EBBE00D5EFF7 /* GameViewController.swift */,
-				63FEFFE8280378CC005D1BA9 /* MyUtils.swift */,
 				63C60FFB27F8EBBE00D5EFF7 /* Main.storyboard */,
-				63C6100027F8EBC000D5EFF7 /* LaunchScreen.storyboard */,
 				63C60FFE27F8EBC000D5EFF7 /* Assets.xcassets */,
+				63C6100027F8EBC000D5EFF7 /* LaunchScreen.storyboard */,
 				63C6100927FB905200D5EFF7 /* Images.xcassets */,
-				63C6100827FB8E3F00D5EFF7 /* Info.plist */,
 			);
 			path = ZombieConga;
 			sourceTree = "<group>";
